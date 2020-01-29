@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="kach.MainPage">
+
+    <StackLayout>
+        <Label  x:Name="Lable"  Text="Качалка" TextColor="WhiteSmoke" FontSize="50"  />
+        <Button x:Name="AkkauntPage" Text="Аккаунт" Clicked="AkkauntPage_Clicked"  BackgroundColor="DarkRed"  BorderColor="Black" TextColor="WhiteSmoke" />
+        <Button x:Name="ReliefPage" Text="Рельеф" Clicked="ReliefPage_Clicked"  BackgroundColor="DarkRed"  BorderColor="Black" TextColor="WhiteSmoke"/>
+        <Button x:Name="MassaPage" Text="Масса" Clicked="MassaPage_Clicked"  BackgroundColor="DarkRed"  BorderColor="Black" TextColor="WhiteSmoke"/>
+        <Button x:Name="PitaniePage" Text="Питание" Clicked="PitaniePage_Clicked"  BackgroundColor="DarkRed"  BorderColor="Black" TextColor="WhiteSmoke"/>
+        <Button x:Name="Adding" Text="Добавить" Clicked="AddingPage_Clicked"  BackgroundColor="DarkRed"  BorderColor="Black" TextColor="WhiteSmoke"/>
+        <Button x:Name="TraningPage" Text="Мои Тренировки" Clicked="Traning_Clicked" BackgroundColor="DarkRed"  BorderColor="Black" TextColor="WhiteSmoke"/>
+    </StackLayout>
+
+</ContentPage>
