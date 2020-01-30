@@ -11385,12 +11385,11 @@
       ]
     },
     "NETStandard.Library/2.0.3": {
-      "sha512": "548M6mnBSJWxsIlkQHfbzoYxpiYFXZZSL00p4GHYv8PkiqFBnnT68mW5mGEsA/ch9fDO9GkPgkFQpWiXZN7mAQ==",
+      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "build/netstandard2.0/NETStandard.Library.targets",
@@ -18191,18 +18190,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\marti\\.nuget\\packages\\": {},
+    "C:\\Users\\opilane\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marti\\source\\repos\\kach\\kach\\kach.UWP\\kach.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\opilane\\source\\repos\\Kachalka\\kach\\kach.UWP\\kach.UWP.csproj",
       "projectName": "kach.UWP",
-      "projectPath": "C:\\Users\\marti\\source\\repos\\kach\\kach\\kach.UWP\\kach.UWP.csproj",
-      "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marti\\source\\repos\\kach\\kach\\kach.UWP\\obj\\",
+      "projectPath": "C:\\Users\\opilane\\source\\repos\\Kachalka\\kach\\kach.UWP\\kach.UWP.csproj",
+      "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\opilane\\source\\repos\\Kachalka\\kach\\kach.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -18210,7 +18209,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -18224,8 +18223,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\marti\\source\\repos\\kach\\kach\\kach\\kach.csproj": {
-              "projectPath": "C:\\Users\\marti\\source\\repos\\kach\\kach\\kach\\kach.csproj"
+            "C:\\Users\\opilane\\source\\repos\\Kachalka\\kach\\kach\\kach.csproj": {
+              "projectPath": "C:\\Users\\opilane\\source\\repos\\Kachalka\\kach\\kach\\kach.csproj"
             }
           }
         }

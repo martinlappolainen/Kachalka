@@ -10,24 +10,24 @@ using Xamarin.Forms.Xaml;
 
 namespace kach
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)] 
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AddingPage : ContentPage
     {
-        string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "temp.txt");
-        string path = @"//C:/Users/marti/source/repos/kach/trenirovrka.txt";
+
+        string path = @"/storage/emulated/0/Android/data/com.companyname.kach/files/trenirovka.txt";
         Picker picker;
-        Entry OpisEntry,uprEntry,podEntry;
+        Entry OpisEntry, uprEntry, podEntry;
         Button bt1;
         Label lbl1;
         public AddingPage()
         {
-            string text = File.ReadAllText("temp.txt");
+
             StackLayout stackLayout = new StackLayout();
 
             stackLayout.BackgroundColor = Color.PeachPuff;
-
-            lbl1 = new Label() { Text = text, FontSize = 20 };
-
+            string text = File.ReadAllText(path);
+            lbl1 = new Label() { Text = text};
+            
             picker = new Picker
             {
                 Title = "Добавь тренировку"
@@ -39,7 +39,7 @@ namespace kach
             picker.Items.Add("Долго но качественно");
             picker.Items.Add("Для женщин");
 
-            //picker.SelectedIndexChanged += Picker_SelectedIndexChanged;
+
             OpisEntry = new Entry { Placeholder = "Описание" };
             uprEntry = new Entry { Placeholder = "Название упражнения" };
             podEntry = new Entry { Placeholder = "Подходы" };
@@ -51,16 +51,19 @@ namespace kach
             stackLayout.Children.Add(podEntry);
             stackLayout.Children.Add(bt1);
             stackLayout.Children.Add(lbl1);
-           
+
             this.Content = stackLayout;
         }
         private void Bt1_Clicked(object sender, EventArgs e)
         {
-            using (var writer = new StreamWriter(File.Create(fileName)))
             {
-                writer.Write(fileName, OpisEntry.Text + uprEntry.Text + podEntry.Text + picker.SelectedIndex, Encoding.UTF8);
-                
+                using (var writer = new StreamWriter(File.Create(path)))
+                {
+                    writer.Write(OpisEntry.Text + uprEntry.Text + podEntry.Text + picker.SelectedIndex, Encoding.UTF8);
+                }
+
             }
+
 
         }
     }

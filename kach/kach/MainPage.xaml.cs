@@ -49,14 +49,14 @@ namespace kach
              await Navigation.PushAsync(new AkkauntPage());
         }
 
-        private void ReliefPage_Clicked(object sender, EventArgs e)
+        private async void ReliefPage_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new ReliefPage());
         }
 
-        private void MassaPage_Clicked(object sender, EventArgs e)
+        private async void MassaPage_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new MassaPage());
         }
 
         private async void PitaniePage_Clicked(object sender, EventArgs e)
@@ -69,9 +69,9 @@ namespace kach
             await Navigation.PushAsync(new AddingPage());
         }
 
-        private void Traning_Clicked(object sender, EventArgs e)
+        private async void Traning_Clicked(object sender, EventArgs e)
         {
-            
+            await Navigation.PushAsync(new Training());
         }
     }
 }
