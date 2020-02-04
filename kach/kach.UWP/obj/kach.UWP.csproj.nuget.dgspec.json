@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\opilane\\source\\repos\\Kachalka\\kach\\kach.UWP\\kach.UWP.csproj": {}
+    "C:\\Users\\marti\\source\\repos\\Kachalka\\kach\\kach.UWP\\kach.UWP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\opilane\\source\\repos\\Kachalka\\kach\\kach.UWP\\kach.UWP.csproj": {
+    "C:\\Users\\marti\\source\\repos\\Kachalka\\kach\\kach.UWP\\kach.UWP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\opilane\\source\\repos\\Kachalka\\kach\\kach.UWP\\kach.UWP.csproj",
+        "projectUniqueName": "C:\\Users\\marti\\source\\repos\\Kachalka\\kach\\kach.UWP\\kach.UWP.csproj",
         "projectName": "kach.UWP",
-        "projectPath": "C:\\Users\\opilane\\source\\repos\\Kachalka\\kach\\kach.UWP\\kach.UWP.csproj",
-        "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\opilane\\source\\repos\\Kachalka\\kach\\kach.UWP\\obj\\",
+        "projectPath": "C:\\Users\\marti\\source\\repos\\Kachalka\\kach\\kach.UWP\\kach.UWP.csproj",
+        "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marti\\source\\repos\\Kachalka\\kach\\kach.UWP\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -19,7 +19,7 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -33,8 +33,8 @@
         "frameworks": {
           "uap10.0.16299": {
             "projectReferences": {
-              "C:\\Users\\opilane\\source\\repos\\Kachalka\\kach\\kach\\kach.csproj": {
-                "projectPath": "C:\\Users\\opilane\\source\\repos\\Kachalka\\kach\\kach\\kach.csproj"
+              "C:\\Users\\marti\\source\\repos\\Kachalka\\kach\\kach\\kach.csproj": {
+                "projectPath": "C:\\Users\\marti\\source\\repos\\Kachalka\\kach\\kach\\kach.csproj"
               }
             }
           }
@@ -87,21 +87,21 @@
         }
       }
     },
-    "C:\\Users\\opilane\\source\\repos\\Kachalka\\kach\\kach\\kach.csproj": {
+    "C:\\Users\\marti\\source\\repos\\Kachalka\\kach\\kach\\kach.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\opilane\\source\\repos\\Kachalka\\kach\\kach\\kach.csproj",
+        "projectUniqueName": "C:\\Users\\marti\\source\\repos\\Kachalka\\kach\\kach\\kach.csproj",
         "projectName": "kach",
-        "projectPath": "C:\\Users\\opilane\\source\\repos\\Kachalka\\kach\\kach\\kach.csproj",
-        "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\opilane\\source\\repos\\Kachalka\\kach\\kach\\obj\\",
+        "projectPath": "C:\\Users\\marti\\source\\repos\\Kachalka\\kach\\kach\\kach.csproj",
+        "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marti\\source\\repos\\Kachalka\\kach\\kach\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -146,10 +146,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

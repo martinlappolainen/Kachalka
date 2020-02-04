@@ -37,7 +37,7 @@ namespace kach
             {
                 Text = "Лучшее За свою цену",
                 FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
-                TextColor = Color.Gold
+                TextColor = Color.White
             };
             ListView listView = new ListView
             {
@@ -46,7 +46,7 @@ namespace kach
                 // Определяем формат отображения данных
                 ItemTemplate = new DataTemplate(() =>
                 {
-                    ImageCell imageCell = new ImageCell {TextColor = Color.Gold, DetailColor = Color.White };
+                    ImageCell imageCell = new ImageCell {TextColor = Color.White, DetailColor = Color.White };
                     imageCell.SetBinding(ImageCell.TextProperty, "Title");
                     Binding companyBinding = new Binding { Path = "Price", StringFormat = "цена:{0}" };
                     imageCell.SetBinding(ImageCell.DetailProperty, companyBinding);
@@ -56,7 +56,7 @@ namespace kach
             };
             listView.ItemTapped += OnItemTapped;
             this.Content = new StackLayout { Children = { header, listView } };
-            this.BackgroundColor = Color.DarkSlateBlue;
+            this.BackgroundColor = Color.Black;
         }
         public async void OnItemTapped(object sender, ItemTappedEventArgs e)
         {

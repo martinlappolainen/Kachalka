@@ -20,7 +20,7 @@ namespace kach
             InitializeComponent();
 
             Grid grid = new Grid();
-            grid.BackgroundColor = Color.DimGray;
+            grid.BackgroundColor = Color.Black;
             grid.RowDefinitions.Add(new RowDefinition {});
             grid.RowDefinitions.Add(new RowDefinition { });
             grid.RowDefinitions.Add(new RowDefinition { });
@@ -29,14 +29,16 @@ namespace kach
             grid.ColumnDefinitions.Add(new ColumnDefinition { });
             grid.ColumnDefinitions.Add(new ColumnDefinition { });
 
+            //Grid.SetRowSpan(Lable, 2);
             grid.Children.Add(Lable, 0, 0);
+            
             grid.Children.Add(AkkauntPage, 0, 1);
             grid.Children.Add(ReliefPage, 1, 1);
             grid.Children.Add(MassaPage, 1, 2);
             grid.Children.Add(PitaniePage, 0, 2);
             grid.Children.Add(Adding, 0, 3);
             grid.Children.Add(TraningPage, 1, 3);
-
+            
 
             Content = grid;
         }
@@ -71,7 +73,7 @@ namespace kach
 
         private async void Traning_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Training());
+            await Navigation.PushAsync(new TraningPage());
         }
     }
 }

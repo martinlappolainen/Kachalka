@@ -7,13 +7,13 @@
              x:Class="kach.MainPage">
 
     <StackLayout>
-        <Label  x:Name="Lable"  Text="Качалка" TextColor="WhiteSmoke" FontSize="50"  />
-        <Button x:Name="AkkauntPage" Text="Аккаунт" Clicked="AkkauntPage_Clicked"  BackgroundColor="DarkRed"  BorderColor="Black" TextColor="WhiteSmoke" />
-        <Button x:Name="ReliefPage" Text="Рельеф" Clicked="ReliefPage_Clicked"  BackgroundColor="DarkRed"  BorderColor="Black" TextColor="WhiteSmoke"/>
-        <Button x:Name="MassaPage" Text="Масса" Clicked="MassaPage_Clicked"  BackgroundColor="DarkRed"  BorderColor="Black" TextColor="WhiteSmoke"/>
-        <Button x:Name="PitaniePage" Text="Питание" Clicked="PitaniePage_Clicked"  BackgroundColor="DarkRed"  BorderColor="Black" TextColor="WhiteSmoke"/>
-        <Button x:Name="Adding" Text="Добавить" Clicked="AddingPage_Clicked"  BackgroundColor="DarkRed"  BorderColor="Black" TextColor="WhiteSmoke"/>
-        <Button x:Name="TraningPage" Text="Мои Тренировки" Clicked="Traning_Clicked" BackgroundColor="DarkRed"  BorderColor="Black" TextColor="WhiteSmoke"/>
+        <Label  x:Name="Lable" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Качалка" TextColor="WhiteSmoke" FontSize="40"   />
+        <Button x:Name="AkkauntPage" Text="Аккаунт" Clicked="AkkauntPage_Clicked"  BackgroundColor="Blue"  BorderColor="White" TextColor="WhiteSmoke" CornerRadius="50" BorderWidth="2" />
+        <Button x:Name="ReliefPage" BorderWidth="2" Text="Рельеф" Clicked="ReliefPage_Clicked"  BackgroundColor="Blue"  BorderColor="White" TextColor="WhiteSmoke" CornerRadius="50" />
+        <Button x:Name="MassaPage" Text="Масса" Clicked="MassaPage_Clicked"  BackgroundColor="Blue"  BorderColor="White" TextColor="WhiteSmoke" CornerRadius="50" BorderWidth="2" />
+        <Button x:Name="PitaniePage" Text="Питание" Clicked="PitaniePage_Clicked"  BackgroundColor="Blue"  BorderColor="White" TextColor="WhiteSmoke" CornerRadius="50" BorderWidth="2" />
+        <Button x:Name="Adding" Text="Добавить" Clicked="AddingPage_Clicked"  BackgroundColor="Blue"  BorderColor="White" TextColor="WhiteSmoke" CornerRadius="50" BorderWidth="2"/>
+        <Button x:Name="TraningPage" Text="Мои Тренировки" Clicked="Traning_Clicked" BackgroundColor="Blue"  BorderColor="White" TextColor="WhiteSmoke" CornerRadius="50" BorderWidth="2" />
     </StackLayout>
 
 </ContentPage>

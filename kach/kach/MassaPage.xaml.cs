@@ -18,7 +18,7 @@ namespace kach
         {
             StackLayout stackLayout = new StackLayout();
 
-            stackLayout.BackgroundColor = Color.PeachPuff;
+            stackLayout.BackgroundColor = Color.Black;
             InitializeComponent();
             Massa = new List<Massa1>
             {
@@ -40,15 +40,15 @@ namespace kach
                 // Определяем формат отображения данных
                 ItemTemplate = new DataTemplate(() =>
                 {
-                    ImageCell imageCell = new ImageCell { TextColor = Color.Black, DetailColor = Color.White };
+                    ImageCell imageCell = new ImageCell { TextColor = Color.White, DetailColor = Color.White };
                     imageCell.SetBinding(ImageCell.TextProperty, "Title");
-                    Binding companyBinding = new Binding { Path = "Price", StringFormat = "цена:{0}" };
-                    imageCell.SetBinding(ImageCell.DetailProperty, companyBinding);
-                    imageCell.SetBinding(ImageCell.ImageSourceProperty, "ImagePath");
+                    //Binding companyBinding = new Binding { Path = "Price", StringFormat = "цена:{0}" };
+                    //imageCell.SetBinding(ImageCell.DetailProperty, companyBinding);
+                    //imageCell.SetBinding(ImageCell.ImageSourceProperty, "ImagePath");
                     return imageCell;
                 })
             };
-            bt1 = new Button { Text = "Обозночение", BackgroundColor = Color.MediumPurple, BorderWidth = 3, BorderColor = Color.White, TextColor = Color.White, CornerRadius = 70 };
+            bt1 = new Button { Text = "Обозначение", BackgroundColor = Color.Blue, BorderWidth = 2, BorderColor = Color.White, TextColor = Color.White, CornerRadius = 60 };
             bt1.Clicked += Bt1_Clicked;
 
             

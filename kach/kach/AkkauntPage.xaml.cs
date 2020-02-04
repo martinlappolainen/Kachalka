@@ -24,19 +24,23 @@ namespace kach
             InitializeComponent();
             StackLayout stackLayout = new StackLayout();
 
-            stackLayout.BackgroundColor = Color.PeachPuff;
+            stackLayout.BackgroundColor = Color.Black;
             header = new Label
             {
                 Text = "Ваш аккаунт",
                 Margin = new Thickness(100, 0, 0, 0),
-                TextColor = Color.MidnightBlue,
+                TextColor = Color.White,
                 FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label))
             };
             image = new Image { Source = "v.png" };
 
             picker = new Picker
             {
-                Title = "Скин"
+                Title = "Скин",
+                TextColor = Color.White,
+                TitleColor = Color.White,
+                
+                
             };
             picker.Items.Add("Весёлый");
             picker.Items.Add("Грустный");
@@ -47,18 +51,20 @@ namespace kach
 
             picker.SelectedIndexChanged += Picker_SelectedIndexChanged;
 
-            loginEntry = new Entry { Placeholder = "Login" };
-            //loginEntry.TextChanged += LoginEntry_TextChanged;
+            loginEntry = new Entry { Placeholder = "Login", PlaceholderColor = Color.White, TextColor = Color.White };
+            
 
             passwordEntry = new Entry
             {
                 Placeholder = "Password",
-                IsPassword = true
+                IsPassword = true,
+                PlaceholderColor = Color.White,
+                TextColor = Color.White
             };
 
-            email = new Entry { Placeholder = "Email", Keyboard = Keyboard.Email };
+            email = new Entry { Placeholder = "Email", Keyboard = Keyboard.Email ,TextColor= Color.White, PlaceholderColor = Color.White };
 
-            bt1 = new Button { Text = "Сохранить", BackgroundColor = Color.MediumPurple, BorderWidth = 3, BorderColor = Color.White, TextColor = Color.White, CornerRadius = 70 };
+            bt1 = new Button { Text = "Сохранить", BackgroundColor = Color.Blue, BorderWidth = 2, BorderColor = Color.White, TextColor = Color.White, CornerRadius = 60 };
             bt1.Clicked += Bt1_Clicked;
 
             textLabel = new Label { FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)) };
@@ -88,30 +94,7 @@ namespace kach
         }
         private void Picker_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //if (picker.SelectedIndex == 0)
-            //{
-            //    image.Source = "ves.jpg";
-            //}
-            //if (picker.SelectedIndex == 1)
-            //{
-            //    image.Source = "grust.jpeg";
-            //}
-            //if (picker.SelectedIndex == 2)
-            //{
-            //    image.Source = "pjan.jpg";
-            //}
-            //if (picker.SelectedIndex == 3)
-            //{
-            //    image.Source = "loh.jpg";
-            //}
-            //if (picker.SelectedIndex == 4)
-            //{
-            //    image.Source = "muz.png";
-            //}
-            //if (picker.SelectedIndex == 5)
-            //{
-            //    image.Source = "zen.png";
-            //}
+            
         }
     }
 }

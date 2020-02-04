@@ -24,13 +24,15 @@ namespace kach
 
             StackLayout stackLayout = new StackLayout();
 
-            stackLayout.BackgroundColor = Color.PeachPuff;
+            stackLayout.BackgroundColor = Color.Black;
             string text = File.ReadAllText(path);
             lbl1 = new Label() { Text = text};
-            
+
             picker = new Picker
             {
-                Title = "Добавь тренировку"
+                Title = "Добавь тренировку",
+                TextColor = Color.White,
+                TitleColor = Color.White
             };
             picker.Items.Add("Тренировка на массу");
             picker.Items.Add("Тренировка на рельеф");
@@ -40,10 +42,10 @@ namespace kach
             picker.Items.Add("Для женщин");
 
 
-            OpisEntry = new Entry { Placeholder = "Описание" };
-            uprEntry = new Entry { Placeholder = "Название упражнения" };
-            podEntry = new Entry { Placeholder = "Подходы" };
-            bt1 = new Button { Text = "Сохранить", BackgroundColor = Color.MediumPurple, BorderWidth = 3, BorderColor = Color.White, TextColor = Color.White, CornerRadius = 70 };
+            OpisEntry = new Entry { Placeholder = "Описание", PlaceholderColor = Color.White, TextColor = Color.White };
+            uprEntry = new Entry { Placeholder = "Название упражнения", PlaceholderColor = Color.White, TextColor = Color.White };
+            podEntry = new Entry { Placeholder = "Подходы", PlaceholderColor = Color.White, TextColor = Color.White };
+            bt1 = new Button { Text = "Сохранить", BackgroundColor = Color.Blue, BorderWidth = 2, BorderColor = Color.White, TextColor = Color.White, CornerRadius = 60 };
             bt1.Clicked += Bt1_Clicked;
             stackLayout.Children.Add(picker);
             stackLayout.Children.Add(OpisEntry);
@@ -59,7 +61,7 @@ namespace kach
             {
                 using (var writer = new StreamWriter(File.Create(path)))
                 {
-                    writer.Write(OpisEntry.Text + uprEntry.Text + podEntry.Text + picker.SelectedIndex, Encoding.UTF8);
+                    writer.Write(picker.SelectedItem + "\n " + OpisEntry.Text+ "\n " + uprEntry.Text  + "\n " + podEntry.Text  , Encoding.UTF8);
                 }
 
             }
